@@ -1,0 +1,42 @@
+/* Resets */
+
+/* Helpers */
+.oculta{display: none ; height: 0px}
+
+/* Colors */
+
+/* Fonts Sizes */
+
+/* Backgrounds */
+/* */
+/* */
+
+/*****************************************
+Layout
+*****************************************/
+/* Header */
+.header{
+    float: left;
+    padding: 20px 5px;
+    width: 100%;
+}
+.img-logo{
+    max-width: 250px;
+    float: left;
+}
+.form-search{
+    float: left;
+}
+.form-search input{
+    border: 1px solid #fb503b;
+    padding: 10px;
+    border-radius: 2px;
+}
+.login{
+    float: right;
+    background: #fb503b;
+    padding: 10px 24px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2px;
+}
