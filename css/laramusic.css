@@ -5,9 +5,7 @@ a:hover{text-decoration: none}
 /* Helpers */
 .oculta{display: none ; height: 0px}
 .hr{
-    background: #fb503b;
-    padding: 1px;
-    border: none;
+    background: #ccc;
 }
 
 /* Colors */
@@ -72,9 +70,9 @@ Layout
 /*Section albuns */
 section.albuns{}
 .title{
-    font-size: 30px;
+    font-size: 24px;
     font-family: OpenSans;
-    color: #981607;
+    color: #fb503b;
 }
 .list-albuns{}
 .img-albun{
@@ -85,4 +83,34 @@ section.albuns{}
     font-size: 20px;
     margin: 5px 0px;
     color: #fc503b;
+}
+
+/* Section Estilos */
+section.estilos{}
+.estilos-mu{}
+a.estilo{
+    width: 100%;
+    float: left;
+    margin: 5px 6px;
+    color: #fb503b;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a.estilo:hover{
+    color: #Ce4130;
+}
+
+/* Footer */
+.footer{
+    background: #555;
+    padding: 20px;
+    margin-top: 60px;
+}
+.text-footer{color: #fff;font-weight: bold;}
+
+.social a{
+    color: #fff;
+    font-size: 20px;
+    margin: 6px;
 }

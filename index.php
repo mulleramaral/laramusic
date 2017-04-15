@@ -21,9 +21,8 @@
 </head>
 <body>
     <h1 class="oculta">LaraMusic</h1>
-
-    <div class="container">
-        <header class="header">
+    <header class="header">
+        <div class="container">
             <div class="col-md-3 col-xs-12">
                 <img src="imgs/laramusic.png" alt="LaraMusic" title="LaraMusic" class="img-logo">
             </div>
@@ -38,55 +37,42 @@
             <div class="col-md-2 col-xs-4">
                 <a href="" class="login">Entrar</a>
             </div>
-        </header> <!-- End Header -->
+        </div> <!-- End Container -->
+    </header> <!-- End Header -->
 
-        <div class="clear"></div>
-        <hr class="hr">
+    <div class="clear"></div>
+    <hr class="hr">
 
-        <section class="albuns">
-            <h1 class="title">
-                Últimos Albúns:
-            </h1>
+    <!-- Conteudo Dinâmico -->
+    <?php
+    if( isset($_GET['prm'])){
+        if(file_exists("pags/{$_GET['prm']}.php"))
+            include_once "pags/{$_GET['prm']}.php";
+        else
+            include_once 'pags/404.php';
+    } else{
+        include_once 'pags/home.php';
+    }
+    ?>
 
-            <div class="list-albuns col-md-12">
-                <article class="col-md-3 col-xs-6 albun">
-                    <a href="">
-                        <img src="./imgs/sitekit-music.png" alt="Nome do Album" class="img-albun">
-                        <h1 class="title-albun">
-                            Nome do Albún
-                        </h1>
-                    </a>
-                </article>
+    <div class="clear"></div>
 
-                <article class="col-md-3 col-xs-6 albun">
-                    <a href="">
-                        <img src="./imgs/sitekit-music.png" alt="Nome do Album" class="img-albun">
-                        <h1 class="title-albun">
-                            Nome do Albún
-                        </h1>
-                    </a>
-                </article>
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="text-footer">CopyRight &copy; EspecializaTI - Todos os direitos reservados <?=date('Y')?> <br/>
+            CNPJ: 23.882.706/0001-20 - contato@especializati.com.br</p>
 
-                <article class="col-md-3 col-xs-6 albun">
-                    <a href="">
-                        <img src="./imgs/sitekit-music.png" alt="Nome do Album" class="img-albun">
-                        <h1 class="title-albun">
-                            Nome do Albún
-                        </h1>
-                    </a>
-                </article>
+            <div class="social">
+                <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
 
-                <article class="col-md-3 col-xs-6 albun">
-                    <a href="">
-                        <img src="./imgs/sitekit-music.png" alt="Nome do Album" class="img-albun">
-                        <h1 class="title-albun">
-                            Nome do Albún
-                        </h1>
-                    </a>
-                </article>
-            </div><!-- End List -->
-        </section><!-- End Albuns -->
-    </div> <!-- End Div Container -->
+                <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div> <!-- End Container -->
+    </footer> <!-- End Footer -->
 
     <!-- jQuery -->
     <script src="js/jquery-3.2.0.js"></script>
