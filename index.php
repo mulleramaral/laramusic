@@ -15,7 +15,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/laramusic.css">
-    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/resets.css">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./imgs/favicon-laramusic.png">
 
