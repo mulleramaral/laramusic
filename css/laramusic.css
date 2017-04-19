@@ -76,13 +76,53 @@ section.albuns{}
 }
 .list-albuns{}
 .img-albun{
-    max-width: 100%;
+    width: 100%;
+    z-index: 0;
 }
 .title-albun{
     text-align: center;
     font-size: 20px;
     margin: 5px 0px;
     color: #fc503b;
+    float: left;
+    padding: 3px 0px;
+    width: 100%;
+}
+
+.image-album{
+    float: left;
+    position: relative;
+}
+.hover-image-album{
+    z-index: 1;
+    position: absolute;
+    float: left;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    height: 100%;
+    background: #fb503b;
+    opacity: 0;
+}
+.hover-image-album:hover{
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out 0s;
+}
+
+.hover-image-album i{
+    color: #fff;
+    font-size: 30px;
+    background: #B14C3F;
+    padding: 10px;
+    border-radius: 100%;
+    margin-top: 18%;
+}
+
+.hover-image-album i:hover{
+    color: #fb503b;}
+
+.albun{
+    min-height: 174px;
 }
 
 /* Section Estilos */
